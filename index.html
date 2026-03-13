@@ -2,180 +2,217 @@
 <html lang="pl">
 <head>
 <meta charset="UTF-8">
-<title>Szony Architekt Ptasich Domków</title>
-
-<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;700&display=swap" rel="stylesheet">
+<title>Szalony Architekt Domków dla Ptaków</title>
 
 <style>
 
 body{
     margin:0;
-    font-family:'Fredoka', sans-serif;
-    background:linear-gradient(120deg,#ff00cc,#3333ff,#00ffee);
-    background-size:400% 400%;
-    animation:bgmove 12s infinite alternate;
-    color:white;
-    overflow-x:hidden;
-}
-
-@keyframes bgmove{
-    0%{background-position:left;}
-    100%{background-position:right;}
+    font-family:"Comic Sans MS", cursive;
+    background:black;
+    color:#ff7a00;
 }
 
 header{
     text-align:center;
-    padding:80px 20px;
-    transform:rotate(-2deg);
+    padding:40px;
+    background:linear-gradient(90deg,#000,#111,#000);
+    border-bottom:4px dashed #ff7a00;
 }
 
 h1{
-    font-size:70px;
-    text-shadow:4px 4px 0 #000;
+    font-size:60px;
 }
 
-.tagline{
+.decor{
     font-size:22px;
-    background:#00000055;
-    display:inline-block;
-    padding:10px 20px;
-    border-radius:20px;
+    letter-spacing:6px;
+    color:#aaa;
 }
 
-.birds{
-    position:fixed;
-    top:0;
-    left:0;
-    width:100%;
-    height:100%;
-    pointer-events:none;
+section{
+    padding:40px;
 }
 
-.bird{
-    position:absolute;
-    font-size:40px;
-    animation:fly linear infinite;
-}
-
-@keyframes fly{
-    from{
-        transform:translateX(-100px) translateY(0);
-    }
-    to{
-        transform:translateX(120vw) translateY(-200px);
-    }
-}
-
-.section{
-    padding:80px 10%;
-    transform:rotate(1deg);
-}
-
-.section:nth-child(even){
-    background:#ffffff22;
-    transform:rotate(-1deg);
-}
-
-h2{
-    font-size:40px;
-}
-
-.grid{
+.gallery{
     display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-    gap:30px;
-    margin-top:30px;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
 }
 
-.card{
-    background:white;
-    color:black;
+.gallery img{
+    width:100%;
+    border:3px solid #ff7a00;
+}
+
+.video{
+    text-align:center;
+}
+
+a{
+    color:#ffb347;
+}
+
+.box{
+    border:3px dotted #ff7a00;
     padding:20px;
-    border-radius:25px;
-    transform:rotate(-2deg);
-    box-shadow:0 10px 25px #00000055;
-    transition:0.3s;
-}
-
-.card:hover{
-    transform:rotate(2deg) scale(1.1);
-}
-
-button{
-    background:#ffcc00;
-    border:none;
-    padding:15px 30px;
-    border-radius:30px;
-    font-size:20px;
-    cursor:pointer;
-    box-shadow:0 5px 0 #cc9900;
-}
-
-button:hover{
-    transform:translateY(3px);
-    box-shadow:0 2px 0 #cc9900;
+    margin:20px 0;
 }
 
 footer{
     text-align:center;
-    padding:40px;
-    font-size:14px;
+    padding:30px;
+    border-top:4px dashed #ff7a00;
 }
 
 </style>
+
 </head>
 
 <body>
 
-<div class="birds">
-<div class="bird" style="top:10%;animation-duration:15s;">🐦</div>
-<div class="bird" style="top:40%;animation-duration:18s;">🕊</div>
-<div class="bird" style="top:70%;animation-duration:12s;">🐤</div>
+<header>
+
+<div class="decor">
+✦✦✦ ✧✧✧ ☼ ☼ ☼ ❖ ❖ ❖ ✦✦✦
 </div>
 
-<header>
-<h1>🪶 Szalony Architekt</h1>
-<p class="tagline">Projektuję najbardziej absurdalne domki dla ptaków na tej planecie</p>
+<h1>🟠 SZALONY ARCHITEKT 🟠</h1>
+
+<p>
+PROJEKTUJĘ DOMKI DLA PTAKÓW  
+ale inspiruję się stylem <b>Lamborghini</b>
+</p>
+
+<div class="decor">
+▣ ▣ ▣ ◇ ◇ ◇ ✹ ✹ ✹ ▣ ▣ ▣
+</div>
+
 </header>
 
-<section class="section">
-<h2>Moje projekty</h2>
+<section>
 
-<div class="grid">
+<h2>❖ O mnie ❖</h2>
 
-<div class="card">
-<h3>🏰 Zamek dla wróbla</h3>
-<p>Miniaturowa twierdza z 12 wieżyczkami i balkonem do ćwierkania.</p>
+<div class="box">
+
+<p>
+✦ Nazywam się <b>Szalony Architekt</b> ✦  
+</p>
+
+<p>
+Projektuję <b>ultra-futurystyczne domki dla ptaków</b> inspirowane
+designem Lamborghini.  
+Jeśli ptak chce mieszkać jak milioner — ja to zaprojektuję.
+</p>
+
+<p>
+☼ wróble  
+☼ sikorki  
+☼ gołębie  
+☼ a czasem nawet bardzo ambitne kruki
+</p>
+
+<p>
+☼☼☼ DESIGN INSPIROWANY: LAMBORGHINI EGOISTA ☼☼☼
+</p>
+
 </div>
 
-<div class="card">
-<h3>🚀 Kosmiczna budka</h3>
-<p>Idealna dla ptaków marzących o locie na Marsa.</p>
-</div>
-
-<div class="card">
-<h3>🍕 Domek pizzowy</h3>
-<p>Kształt pizzy. Ser jako izolacja termiczna.</p>
-</div>
-
-<div class="card">
-<h3>🎢 Rollercoaster</h3>
-<p>Budka połączona z mini kolejką dla hiperaktywnych sikorek.</p>
-</div>
-
-</div>
 </section>
 
-<section class="section">
-<h2>Zamów projekt</h2>
-<p>Masz ptaka z wielkimi marzeniami mieszkaniowymi?</p>
-<button onclick="alert('Ćwir ćwir! Zamówienie przyjęte!')">
-Zaprojektuj domek
-</button>
+<section>
+
+<h2>🟠 Inspiracja: Lamborghini 🟠</h2>
+
+<div class="gallery">
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/5/5b/Lamborghini_Egoista.jpg">
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/7/70/Lamborghini_Egoista_side.jpg">
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/3/3a/Lamborghini_Aventador.jpg">
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/9/90/Lamborghini_Huracan.jpg">
+
+</div>
+
+</section>
+
+<section>
+
+<h2>❖ Filmy Lamborghini ❖</h2>
+
+<div class="video">
+
+<p>
+✦✦✦ Zobacz inspirację ✦✦✦
+</p>
+
+<p>
+<a href="https://www.youtube.com/watch?v=6nK7u5W3hO8" target="_blank">
+► Lamborghini Egoista video
+</a>
+</p>
+
+<p>
+<a href="https://www.youtube.com/watch?v=viY8R3hC1kA" target="_blank">
+► Lamborghini Aventador cinematic
+</a>
+</p>
+
+<p>
+<a href="https://www.youtube.com/watch?v=OqSmb3n0j8o" target="_blank">
+► Lamborghini Huracan exhaust sound
+</a>
+</p>
+
+</div>
+
+</section>
+
+<section>
+
+<h2>☼ Przykładowe projekty domków dla ptaków ☼</h2>
+
+<div class="box">
+
+<p>
+🚀 Domek „Egoista Bird Edition”  
+</p>
+<p>
+🛸 Domek „Stealth Wróbel Fighter”  
+</p>
+<p>
+⚡ Domek „V12 dla Sikorki”  
+</p>
+
+<p>
+✦✦✦ każdy projekt jest szybki, agresywny i aerodynamiczny ✦✦✦
+</p>
+
+</div>
+
 </section>
 
 <footer>
-© 2026 Szalony Architekt Ptasich Domków
+
+<div class="decor">
+✦ ❖ ✦ ❖ ✦ ❖ ✦ ❖ ✦
+</div>
+
+<p>
+© Szalony Architekt Domków dla Ptaków
+</p>
+
+<p>
+„Ptaki też zasługują na supersamochód… tylko w wersji mieszkalnej.”
+</p>
+
+<div class="decor">
+▣ ◇ ▣ ◇ ▣ ◇ ▣
+</div>
+
 </footer>
 
 </body>
